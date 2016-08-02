@@ -257,7 +257,7 @@ df4 &lt;- sampleData %&gt;%
   summarize(mean(steps))
 
 names(df4) &lt;- c(&quot;interval&quot;, &quot;WD&quot;, &quot;Mean_Steps&quot;)</code></pre>
-<p>Plot Total steps per each 5 min</p>
+<p>I think this kind of graphics is more interesting and more easy for analysis</p>
 <pre class="r"><code>ggplot(df4, aes(x=interval, y=Mean_Steps, color =as.factor(WD))) + 
   labs(title = &quot;Total steps per each 5 min&quot;, y =&quot;Frecuency&quot;, x =&quot;cumulative minutes&quot;)+
   geom_line()</code></pre>

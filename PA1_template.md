@@ -236,7 +236,8 @@ df4 <- sampleData %>%
 
 names(df4) <- c("interval", "WD", "Mean_Steps")
 ```
-Plot Total steps per each 5 min
+I think this kind of graphics is more interesting and more easy
+for analysis
 
 ```r
 ggplot(df4, aes(x=interval, y=Mean_Steps, color =as.factor(WD))) + 
